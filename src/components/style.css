@@ -61,7 +61,7 @@ h1 {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Buttons */
+/* General Button */
 .button {
     background-color: #007BFF;
     color: white;
@@ -100,18 +100,79 @@ li {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     font-size: 1.2em;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.task-top {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
 }
 
-/* Delete Button inside li */
+.btn-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+/* Specific Buttons inside li */
 li .dlt {
     background-color: crimson;
     font-size: 0.9em;
     padding: 7px 12px;
     border-radius: 6px;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-li .button:hover {
+li .dlt:hover {
     background-color: darkred;
+}
+
+li .edit {
+    background-color: #28a745;
+    font-size: 0.9em;
+    padding: 7px 12px;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+li .edit:hover {
+    background-color: #218838;
+}
+
+li .complete {
+    background-color: #f6ae05;
+    font-size: 0.9em;
+    padding: 7px 12px;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+li .complete:hover {
+    background-color: #e8bd00;
+}
+
+li .save {
+    background-color: #17a2b8;
+    font-size: 0.9em;
+    padding: 7px 12px;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+li .save:hover {
+    background-color: #138496;
 }
